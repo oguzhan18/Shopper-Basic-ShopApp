@@ -1,0 +1,133 @@
+body {
+  font-size: 1.4rem;
+  margin-left: 6%;
+}
+a {
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 70px;
+}
+.card {
+  width: 90%;
+  max-width: 90rem;
+  height: 50rem;
+  margin-left: 20%;
+  margin: 5rem auto;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.card__wallet {
+  padding: 5rem 3rem 2rem 3rem;
+  background: #ffffff;
+}
+.card__wallet--header {
+  color: #333333;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.card__wallet--header h1 {
+  font-weight: 500;
+}
+.card__wallet--header .add {
+  display: grid;
+  place-items: center;
+}
+.card__wallet--header .add img {
+  width: 2.25rem;
+}
+.card__wallet--content {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1.5rem;
+}
+.card__wallet--content a {
+  display: block;
+  padding: 25px 15px 15px 15px;
+  background: #ffffff;
+  color: #948c85;
+  border-radius: 0.5rem;
+}
+.card__wallet--content a img {
+  width: 6rem;
+}
+.card__wallet--content a .password {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+.card__wallet--content a:hover,
+.card__wallet--content .active {
+  box-shadow: inset 0 0 0.7rem 0px #002af9;
+}
+.card__balance {
+  padding: 5rem 3rem 2rem 3rem;
+  background: #ffffff;
+  height: 100%;
+  overflow-y: auto;
+}
+.card__balance--header {
+  color: #333333;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__balance--header .total {
+  font-size: 2.25rem;
+}
+.card__balance--box {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 3rem auto 6rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+.card__balance--box img {
+  width: 2rem;
+  border-radius: 50%;
+}
+.card__balance--box .item h1 {
+  color: #292522;
+  font-weight: 400;
+}
+.card__balance--box .item p {
+  color: #948c85;
+}
+.card__balance--box h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+.card__balance--box.plus h2 {
+  color: #8ace5e;
+}
+.card__balance--box.minus h2 {
+  color: #8797c6;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    height: 55rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 23rem 32rem;
+  }
+  .card__wallet {
+    padding: 2rem 3rem;
+    overflow-x: auto;
+  }
+  .card__wallet--content {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+  }
+  .card__wallet--content a {
+    min-width: 16rem;
+  }
+}

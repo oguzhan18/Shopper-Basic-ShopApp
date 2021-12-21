@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+  <body>
+    <input type="checkbox" id="toggler" />
+    <aside class="aside-wrapper">
+      <h1 class="logo-text">
+        <span style="text-shadow: 2px 2px rgb(255, 255, 255)">Shopper</span>
+        <label for="toggler"><i class="fas fa-bars sidebar-toggle"></i></label>
+      </h1>
+      <ul>
+        <li>
+          <a routerLink="/productontainer">
+            <i class="fa fa-home fa-2x"></i>
+            <span class="nav-text"> Home</span>
+          </a>
+        </li>
+        <li class="has-subnav">
+          <a [routerLink]="['/cart']" routerLinkActive="active">
+            <i class="fa fa-list fa-2x"></i>
+            <span class="nav-text"> Cart </span>
+          </a>
+        </li>
+        <li class="has-subnav">
+          <a [routerLink]="['/wallet']" routerLinkActive="active">
+            <i class="fa fa-folder-open fa-2x"></i>
+            <span class="nav-text"> Wallet </span>
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/cart']" routerLinkActive="active">
+            <i class="fa fa-table fa-2x"></i>
+            <span class="nav-text"> Liste </span>
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/malls']" routerLinkActive="active">
+            <i class="fa fa-map-marker fa-2x"></i>
+            <span class="nav-text"> Shopping malls </span>
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/contact']" routerLinkActive="active">
+            <i class="fa fa-info fa-2x"></i>
+            <span class="nav-text"> Contact</span>
+          </a>
+        </li>
+        <li></li>
+      </ul>
+
+      <ul class="logout">
+        <li>
+          <a [routerLink]="['/login']" routerLinkActive="active">
+            <i class="fa fa-power-off fa-2x"></i>
+            <span class="nav-text"> Logout </span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </body>
+</html>

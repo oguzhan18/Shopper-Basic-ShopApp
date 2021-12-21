@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <div class="container bootstrap snippets">
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="contact-detail-box">
+            <i class="fa fa-th fa-3x text-colored"></i>
+            <h4>You Can Always Reach</h4>
+            <abbr title="Phone">P:</abbr> 05372503818<br />
+            E:
+            <a href="mailto:email@email.com" class="text-muted"
+              >oguzhanacart1@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="contact-detail-box">
+            <i class="fa fa-map-marker fa-3x text-colored"></i>
+            <h4>Our Location</h4>
+
+            <address>
+              enibosna Merkez Mahallesi 29 Ekim Caddesi Vizyonpark Ofis Blokları
+              3.Plaza Kat 1 No 13 Bahçelievler İSTANBUL<br />
+            </address>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="contact-detail-box">
+            <i class="fa fa-book fa-3x text-colored"></i>
+            <h4>24x7 Support</h4>
+            <p>We can always help with our competent software support team..</p>
+            <h4 class="text-muted">7/24</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?q=aifasoft&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              style="width: 100%; height: 360px"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <form
+            role="form"
+            name="ajax-form"
+            id="ajax-form"
+            action="https://formsubmit.io/send/oguzhancart1@gmail.com"
+            method="post"
+            class="form-main"
+          >
+            <div class="form-group">
+              <label for="name2">Name</label>
+              <input
+                class="form-control"
+                id="name2"
+                name="name"
+                onblur="if(this.value == '') this.value='Name'"
+                onfocus="if(this.value == 'Name') this.value=''"
+                type="text"
+                value="Name"
+              />
+              <div class="error" id="err-name" style="display: none">
+                Please enter name
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email2">Email</label>
+              <input
+                class="form-control"
+                id="email2"
+                name="email"
+                type="text"
+                onfocus="if(this.value == 'E-mail') this.value='';"
+                onblur="if(this.value == '') this.value='E-mail';"
+                value="E-mail"
+              />
+              <div class="error" id="err-emailvld" style="display: none">
+                E-mail is not a valid format
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message2">Message</label>
+              <textarea
+                class="form-control"
+                id="message2"
+                name="message"
+                rows="5"
+                onblur="if(this.value == '') this.value='Message'"
+                onfocus="if(this.value == 'Message') this.value=''"
+              >
+Message</textarea
+              >
+              <div class="error" id="err-message" style="display: none">
+                Please enter message
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-shadow btn-rounded w-md"
+                  id="send"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

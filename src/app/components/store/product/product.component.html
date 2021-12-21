@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="align-items-center">
+    <div class="card mb-4" style="max-width: 400px; margin-left: 400px">
+      <div class="row no-gutters">
+        <div class="col-md-4" style="width: 150px; height: 150px;">
+          <img src="{{ product.image }}" class="card-img" id="" />
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">Phone markası</p>
+            <button (click)="addToCart($event)" class="btn" style="background-color: rgb(209, 114, 6); color: white;">
+              basket
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
